@@ -14,4 +14,52 @@
             maxlength="50"
             [ngClass]="aTitle.valid || aTitle.pristine ? '': 'bg-danger'">
     </div>
+
+    <div class="form-group">
+        <label> Subtitle: </label>
+        <input class="form-control" 
+            type="text" 
+            required 
+            [(ngModel)]="article.subtitle" 
+            name="aSubtitle" 
+            #aSubtitle="ngModel"
+            minlength="10"
+            maxlength="50"
+            [ngClass]="aSubtitle.valid || aSubtitle.pristine ? '': 'bg-danger'">
+    </div>
+
+    <div class="form-group">
+        <label> Abstract: </label>
+        <input class="form-control" 
+            type="text" 
+            required 
+            [(ngModel)]="article.abstract"
+            name="aAbstract" 
+            #aAbstract="ngModel"
+            minlength="10"
+            [ngClass]="aAbstract.valid || aAbstract.pristine ? '': 'bg-danger'">
+    </div>
+
+    <div class="form-group">
+        <label> Body: </label>
+        <input class="form-control" 
+            type="text" 
+            [(ngModel)]="article.body"
+            name="aBody" 
+            #aBody="ngModel"
+            [ngClass]="aBody.valid || aBody.pristine ? '': 'bg-danger'">
+    </div>
+
+
+    <div class="form-group">
+      <label> Category: </label>
+      <select class="form-control" id="inputCategory" aria-describedby="categoryHelp" placeholder="Select category"
+              [(ngModel)]="article.category" name="category">
+        <option value="National">National</option>
+        <option value="International">International</option>
+        <option value="Sports">Sports</option>
+        <option value="Economy">Economy</option>
+      </select>
+    </div>
+
 </form>
