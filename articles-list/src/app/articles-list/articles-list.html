@@ -1,0 +1,17 @@
+<h2> FORMMMM </h2>
+
+<form #articleForm="ngForm" (ngSubmit)="sendForm()">
+    
+    <div class="form-group">
+        <label> Title: </label>
+        <input class="form-control" 
+            type="text" 
+            required 
+            [(ngModel)]="article.title" 
+            name="aTitle" 
+            #aTitle="ngModel"
+            minlength="10"
+            maxlength="50"
+            [ngClass]="aTitle.valid || aTitle.pristine ? '': 'bg-danger'">
+    </div>
+</form>
