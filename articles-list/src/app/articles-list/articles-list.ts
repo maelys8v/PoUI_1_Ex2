@@ -3,9 +3,10 @@ import { Article } from '../interfaces/article';
 import { ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
+import { Highlight } from '../directives/highlight'
 
 @Component({
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, Highlight],
   standalone: true,
   selector: 'app-articles-list',
   styleUrl: './articles-list.css',

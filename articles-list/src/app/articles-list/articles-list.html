@@ -1,10 +1,10 @@
-<h2> FORMMMM </h2>
+<h2> Article form </h2>
 
 <form #articleForm="ngForm" (ngSubmit)="sendForm()">
     
     <div class="form-group">
         <label> Title: </label>
-        <input class="form-control" 
+        <input appHighlight class="form-control" 
             type="text" 
             required 
             [(ngModel)]="article.title" 
@@ -17,7 +17,7 @@
 
     <div class="form-group">
         <label> Subtitle: </label>
-        <input class="form-control" 
+        <input appHighlight class="form-control" 
             type="text" 
             required 
             [(ngModel)]="article.subtitle" 
@@ -30,7 +30,7 @@
 
     <div class="form-group">
         <label> Abstract: </label>
-        <input class="form-control" 
+        <input appHighlight class="form-control" 
             type="text" 
             required 
             [(ngModel)]="article.abstract"
@@ -42,7 +42,7 @@
 
     <div class="form-group">
         <label> Body: </label>
-        <input class="form-control" 
+        <input appHighlight class="form-control" 
             type="text" 
             [(ngModel)]="article.body"
             name="aBody" 
@@ -53,7 +53,7 @@
 
     <div class="form-group">
       <label> Category: </label>
-      <select class="form-control" id="inputCategory" aria-describedby="categoryHelp" placeholder="Select category"
+      <select appHighlight class="form-control" id="inputCategory" aria-describedby="categoryHelp" placeholder="Select category"
               [(ngModel)]="article.category" name="category">
         <option value="National">National</option>
         <option value="International">International</option>
