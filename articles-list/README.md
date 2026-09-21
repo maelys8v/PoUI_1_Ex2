@@ -1,10 +1,5 @@
-# Newspaper Reader: Assesment 1
+# Newspaper Reader: Optional Assesment 
 
 **Authors** :
 - HUBNER Franca
 - DEVAUD Maëlys
-
-
-
-
-qpçeusoqjcbvpeiouùshflnkdc !lnxcm!
