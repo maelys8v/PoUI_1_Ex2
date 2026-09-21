@@ -5,4 +5,5 @@ export interface Article {
   abstract: string;
   category: 'National' | 'International' | 'Sports' | 'Economy';
   id: number;
+  show: null | 1;
 }
